@@ -3,8 +3,10 @@
 
 #include <string>
 
-// this function should expect that `expression` has already been
-// validated and thus throw no exceptions
+bool isValidDouble(const std::string &expression);   // true if (+|-)A(.B) format
+
 double parse_number(const std::string &expression);
+
+std::string add(const std::string &lhs, const std::string &rhs);
 
 #endif // __CALCULATOR_HPP
